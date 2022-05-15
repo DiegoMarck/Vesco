@@ -1,0 +1,120 @@
+/*=======================================
+        bootsteap 3 Media Queries
+=========================================*/
+
+/* Large Devices (Desktops & Laptops) */
+@media screen and (min-width: 1200px) {
+        /* Ok */
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+        /* Mobile menu */
+        .navbar {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 0;
+        }
+
+        .navbar-nav {
+                float: left;
+        }
+
+        .vesco-nav-wrapper {
+                padding: 0;
+        }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+        /* Mobile menu */
+        .navbar {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 0;
+        }
+
+        .navbar-nav {
+                float: left;
+        }
+
+        .vesco-nav-wrapper {
+                padding: 0;
+        }
+
+        /* About - Remove diagonal border */
+        #about-bg-diagonal {
+                border-left: 0;
+                border-top: 0;
+                width: 100%;
+                height: 350px;
+        }
+
+        #about-content-box {
+                width: 100%;
+                height: 350px;
+        }
+
+        /* Stats */
+        .stats-item {
+                padding: 20px 0;
+        }
+
+        /* Footer */
+        #footer-copyrights {
+                text-align: center;
+        }
+
+
+}
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media screen and (max-width: 767px) {
+        /* Mobile menu */
+        .navbar {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 0;
+        }
+
+        .navbar-nav {
+                float: left;
+        }
+
+        .vesco-nav-wrapper {
+                padding: 0;
+        }
+        /* Home */
+        #home-heading h3 {
+                font-size: 24px;
+        }
+        /* Buttons */
+        .btn-general {
+                padding: 6px 22px 6px 22px;
+                font-size: 14px;
+        }
+        /* About - Remove diagonal border */
+        #about-bg-diagonal {
+                border-left: 0;
+                border-top: 0;
+                width: 100%;
+                height: 350px;
+        }
+
+        #about-content-box {
+                width: 100%;
+                height: 350px;
+        }
+        /* Work */
+        .img-wrapper img {
+                min-width: 100%;
+        }
+        /* Testimonials */
+        
+
+}
+
+/* Extra Small Devices (Smaller Devices) */
+@media screen and (max-width: 480px) {}
+
+/* Extra Small Devices (Smaller Devices) */
+@media screen and (max-width: 320px) {}
