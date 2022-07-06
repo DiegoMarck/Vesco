@@ -118,19 +118,23 @@ p {
             Animate
 =========================================*/
 #home-cover, #home-heading, #home-btn {
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
 
 #home-cover {
-    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+            animation-delay: .1s;
 }
 
 #home-heading {
-    animation-delay: .5s;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
 }
 
 #home-btn {
-    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 /*=======================================
@@ -146,8 +150,6 @@ p {
     text-align: center;
     margin: 0 0 30px 0;
 }
-
-.content-title h3 {}
 
 .content-title-white h3 {
     color: white;
@@ -178,6 +180,7 @@ p {
     width: 75px;
     height: 75px;
     text-align: center;
+    font-size: 4.5rem;
 }
 
 .service-item:hover .service-item-icon i {
@@ -256,11 +259,18 @@ p {
 }
 
 .img-wrapper img {
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    -o-transition: transform .5s ease;
     transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .img-wrapper img:hover {
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    cursor: -webkit-zoom-in;
     cursor: zoom-in;
 }
 
@@ -361,7 +371,6 @@ h4.team-member-designation {
 .testimonial blockquote::before,
 .testimonial blockquote::after {
     font-size: 80px;
-    font-size: normal;
     line-height: 1;
     width: 30px;
     height: 30px;
@@ -506,6 +515,9 @@ footer {
 address {
     color: white;
 }
+address strong {
+    font-size: 16px;
+}
 address strong, #phone-fax-email strong {
     letter-spacing: 1px;
 }
@@ -562,6 +574,8 @@ form .form-control {
 =========================================*/
 .navbar {
     padding: 20px 0;
+    -webkit-transition: all .5s ease-in-out;    
+    -o-transition: all .5s ease-in-out; 
     transition: all .5s ease-in-out;
 }
 .vesco-top-nav {
